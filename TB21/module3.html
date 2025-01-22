@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 3</title>
+  </head>
+  <body>
+    <div>
+      <label for="firstname">Enter first name here:</label>
+      <input type="text" name="" id="firstname" />
+    </div>
+    <div>
+        <label for="lastname">Enter first last name here:</label>
+        <input type="text" name="" id="lastname" />
+      </div>
+    <button type="button" onclick="displayGreeting()">Show Greeting</button>
+    <div>
+      <h1 id="greeting"></h1>
+    </div>
+
+    <script>
+      function makeFull(first, last) {
+        let full = first + " " + last;
+        return full;
+      }
+
+      function displayGreeting() {
+        let firstname = document.getElementById("firstname").value;
+        let lastname = document.getElementById("lastname").value;
+        let fullname = makeFull(firstname, lastname);
+        // let greeting = document.getElementById("greeting");
+        // greeting.innerHTML = "Hello, " + fullname;
+        document.getElementById("greeting").innerHTML = "Hello, " + fullname;
+      }
+    </script>
+  </body>
+</html>

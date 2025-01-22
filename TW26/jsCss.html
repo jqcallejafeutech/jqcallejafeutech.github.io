@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applying CSS Using JavaScript</title>
+
+    <script>
+        function change(){
+            if(document.getElementById('p').style.color == "black")
+                document.getElementById('p').style.color = "red";
+            else
+                document.getElementById('p').style.color = "black";
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <p id="p" style="color: black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quae, quasi commodi cumque architecto fugit ducimus nulla dolor consequatur obcaecati doloremque veniam fuga!</p>
+    </div>
+    <button type="button" onclick="change()">Change Color</button>
+</body>
+</html>
