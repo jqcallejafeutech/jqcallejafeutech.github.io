@@ -1,0 +1,26 @@
+/* CSS That immitates facebook page */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+}
+
+.col {
+    width: 50%;
+    padding: 10px;
+}
+
+.logo {
+    padding: 10px;
+    width: 45%;
+    text-align: center;
+}
