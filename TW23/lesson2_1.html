@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript and CSS</title>
+    <style>
+        div{
+            background-color: "white";
+            text-align: center;
+            padding: 15px;
+            border: 2px solid black;
+            border-radius: 20px;
+            margin-bottom: 5px;
+        }
+
+        button{
+            padding: 20px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <p>Joseph Calleja</p>
+        <p>Instructor</p>
+        <p>FEU Institute of Technology</p>
+    </div>
+    <button type="button" onclick="changeColor()">Change Background</button>
+
+    <script>
+        function changeColor(){
+            let container = document.getElementById("container");
+            if(container.style.backgroundColor == "white"){
+                container.style.backgroundColor = "yellow";
+            }
+            else{
+                container.style.backgroundColor = "white";
+            }
+        }
+    </script>
+</body>
+</html>

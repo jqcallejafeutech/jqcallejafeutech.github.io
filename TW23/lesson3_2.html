@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+
+    <style>
+        .text{
+            color: blue;
+            background-color: aqua;
+        }
+
+        .change{
+            color: rgb(255, 0, 0);
+            background-color: rgb(26, 255, 56);
+        }
+    </style>
+</head>
+<body>
+    <div id="text" class="text">
+        <h3>This is a text!</h3>
+    </div>
+    <button type="button" onclick="change()">Change</button>
+
+    <script>
+        function change(){
+            element = document.getElementById("text");
+            if(element.classList.contains("text")){
+                element.classList.remove("text");
+                element.classList.add("change");
+            }else{
+                element.classList.remove("change");
+                element.classList.add("text");
+            }
+        }
+    </script>
+</body>
+</html>
