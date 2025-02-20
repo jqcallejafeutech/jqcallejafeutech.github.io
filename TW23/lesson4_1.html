@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects and Events</title>
+</head>
+<body>
+    <script>
+        function setID(newID){
+            with(this){
+                id = newID;
+            }
+        }
+        function setName(newName){
+            with(this){
+                name = newName;
+            }
+        }
+        function Student(){
+            this.id = setID;
+            this.name = setName;
+        }
+    </script>
+    <h1>Hello</h1>
+    <div>
+        <h3 id="id"></h3>
+        <h4 id="name"></h4>
+    </div>
+    <script>
+        var student = new Student();
+        student.id(1234);
+        student.name("Joseph Calleja")
+        document.getElementById("id").innerHTML = student.id;
+        document.getElementById("name").innerHTML = student.name;
+
+        // var number = new Number()
+        number = 1234.234;
+        console.log(typeof(b));
+        var strNum = number.toString();
+        console.log(number);
+        console.log(typeof(number));
+        console.log(strNum);
+        console.log(typeof(strNum));
+    </script>
+</body>
+</html>

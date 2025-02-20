@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Events</title>
+</head>
+<body>
+    <script>
+        var student = new Object();
+        student.id = 1234;
+        student.name = "Joseph Calleja";
+    </script>
+    <h1>Hello</h1>
+    <div>
+        <h3 id="id"></h3>
+        <h4 id="name"></h4>
+    </div>
+    <script>
+        console.log(this.id);
+        document.getElementById("id").innerHTML = student.id;
+        document.getElementById("name").innerHTML = student.name;
+    </script>
+</body>
+</html>
