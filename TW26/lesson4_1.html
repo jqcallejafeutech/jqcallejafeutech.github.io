@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects and Events 1</title>
+</head>
+<body>
+    <script>
+       // Create an instance of a object
+       var student = new Object();
+       
+       // Add and assing properties to the object
+        student.id = 1234
+        student.name = "Joseph Calleja";
+    </script>
+
+    <div>
+        <p id="id"></p>
+        <p id="name"></p>
+    </div>
+
+    <script>
+        document.getElementById("id").innerHTML = student.id;
+        document.getElementById("name").innerHTML = student.name;
+    </script>
+</body>
+</html>

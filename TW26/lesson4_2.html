@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects and Events 1</title>
+</head>
+<body>
+    <script>
+        // declare a function to used to instantiate an object
+        function Student(id, name){
+            this.id =id;
+            this.name = name;
+        }
+    </script>
+
+    <div>
+        <p id="id"></p>
+        <p id="name"></p>
+    </div>
+
+    <script>
+        // Instantiate an opject using the function
+        var student = new Student(22222, "JC Calleja");
+
+        document.getElementById("id").innerHTML = student.id;
+        document.getElementById("name").innerHTML = student.name;
+    </script>
+</body>
+</html>

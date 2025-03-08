@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects and Events 1</title>
+</head>
+<body>
+    <script>
+       // Create an instance of a object
+       var student = new Object();
+       
+       // Add and assing properties to the object
+        student.id = 1234
+        student.name = "Joseph Calleja";
+    </script>
+
+    <div>
+        <p id="id"></p>
+        <p id="name"></p>
+    </div>
+
+    <script>
+        document.getElementById("id").innerHTML = student.id;
+        document.getElementById("name").innerHTML = student.name;
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects and Events 1</title>
+</head>
+<body>
+    <script>
+        // Declare get functions
+        function getInfo(newID, newName){
+            with(this){
+                name = newName.toUpperCase();
+                id = "FEU-".toLowerCase() + newID.toString();
+            }
+            console.log(newID);
+            console.log(newID.toString());
+        }
+
+        // declare a function to used to instantiate an object
+        function Student(){
+            this.name = "";
+            this.id = 0;
+            this.data = getInfo;
+        }
+    </script>
+
+    <div>
+        <p id="id"></p>
+        <p id="name"></p>
+    </div>
+
+    <script>
+        // Instantiate an opject using the function
+        var student = new Student();
+
+        student.data(44555, "JayCee");
+
+        document.getElementById("id").innerHTML = student.id;
+        document.getElementById("name").innerHTML = student.name;
+    </script>
+</body>
+</html>
