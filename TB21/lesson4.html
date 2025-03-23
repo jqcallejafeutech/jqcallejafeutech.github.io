@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript and Objects</title>
+    <script>
+        function add(num1, num2){
+            with(this){
+                sum = num1 + num2;
+            }
+            return this.sum;
+        }
+
+        function operate(n1, n2){
+            this.firsNumber = n1;
+            this.secondNumber = n2;
+            this.sum = add(n1, n2);
+        }
+    </script>
+
+    <style>
+        .focus{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        First Number: <input type="text" id = "firstnum" onfocus="setfirstnum()" onfocusout="setfirstnum()"><br>
+        Second Number: <input type="text" id = "secondnum" onfocus="setsecondnum()" onfocusout="setsecondnum()"><br>
+        <button type="button" id="compute" onclick="compute()" onmouseover="changecolor()" onmouseleave="changecolor()">Compute</button><br>
+        <p1 id="output"></p1>
+    </div>
+    <script>
+        var output = document.getElementById("output");
+        
+        function compute(){
+            var n1 = document.getElementById("firstnum").value;
+            var n2 = document.getElementById("secondnum").value;
+            var getSum = new operate(parseFloat(n1), parseFloat(n2));
+            // console.log(getSum.sum);
+            output.innerHTML = "The sum of " + getSum.firsNumber +
+                " and " + getSum.secondNumber + " is " + getSum.sum;
+        }
+        
+        var firstnum = document.getElementById("firstnum")
+        var secondnum = document.getElementById("secondnum")
+        var computebutton = document.getElementById("compute")
+
+        function setfirstnum(){
+            firstnum.classList.toggle("focus")
+        }
+
+        function setsecondnum(){
+            secondnum.classList.toggle("focus")
+        }
+
+        function changecolor(){
+            computebutton.classList.toggle("focus");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+
+<body>
+    <script>
+        function compute(){
+            var num1 = document.getElementById("num1");
+            var num2 = document.getElementById("num2");
+            var result = parseFloat(num1.value) + parseFloat(num2.value);
+
+            var display = document.getElementById("result");
+            display.innerHTML = "The result is:" + result;
+        }
+    </script>
+
+    <div style="width: 50%">
+        <div>
+            <label for="num1">First Number</label>
+            <input type="text" name="" id="num1">
+        </div>
+        <div>
+            <label for="num2">Second Number</label>
+            <input type="text" name="" id="num2">
+        </div>
+        <div>
+            <p id="result"></p>
+        </div>
+        <div>
+            <button type="button" onclick="compute()">Compute</button>
+        </div>
+    </div>
+</body>
+
+</html>
