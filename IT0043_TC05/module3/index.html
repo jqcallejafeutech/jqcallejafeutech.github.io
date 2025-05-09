@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Create a link to the external CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Using CSS</title>
+
+    <!-- This is an internal CSS -->
+    <style>
+        .row{
+            background: transparent;
+            margin: auto;
+            display: flex;
+            width: 90%;
+        }
+        .col{
+            background: transparent;
+            margin: 5px;
+            padding: 2px;
+            flex: 1;
+            width: 50%;
+        }
+        #col2{
+            color:rgba(62, 0, 0, 0.978);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span style="font-weight: bold; color: blue">Voluptas</span> ipsam repudiandae nulla incidunt possimus obcaecati neque aliquid! Praesentium beatae consequuntur inventore at nisi quas alias necessitatibus explicabo, voluptatibus molestiae aliquid.</p>
+            </div>
+            <div class="col" id="col2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Porro</span> omnis nihil tempore assumenda reprehenderit sint beatae placeat! Iure nihil voluptas, <span>blanditiis</span> dolorem possimus incidunt, fugiat sit ad nobis dignissimos vitae.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

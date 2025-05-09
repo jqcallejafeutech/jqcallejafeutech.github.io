@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Web Page</title>
+
+    <style>
+        *{
+            font-family: Arial;
+        }
+        .col-md{
+            width: 50%;
+        }
+        .logo{
+            width: 50px;
+        }
+        .beach{
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <a href="https://www.feutech.edu.ph" target="_blank"><img class="logo" src="assets/images/logo.png" alt="FEU Tech logo"></a>
+        </div>
+        <h1>Hello, Web Page Development</h1>
+        <h3>By:<a href="about.html">Joseph Q. Calleja</a></h3>
+        <a href="https://www.facebook.com/">Visit the author's Facebook account</a><br>
+        <a href="#favorites">Jump to favorites</a>
+
+        <h4>This is my first web page that I developed using VS Code</h4>
+        <div class="col-md">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores dignissimos nisi quia, eius necessitatibus, obcaecati perspiciatis!</p>
+        </div>
+        <div id="favorites">
+            <h3>LISTS</h3>
+            <ul>
+                <li>My Favorite Bands
+                    <ul type="square">
+                        <li>Dragon Force</li>
+                        <li>Black Veiled Brides</li>
+                        <li>Five Finger Punch</li>
+                    </ul>
+                </li>
+                <li>My Favorite Cars
+                    <ol type="1" start="5">
+                        <li>Porsche Carrera GT</li>
+                        <li>Aston Martin DB9</li>
+                        <li>Nissan RX-8</li>
+                    </ol>
+                </li>
+                <li>Some terms that I use
+                    <dl>
+                        <dt>HTML</dt>
+                        <dd>Hypertext Markup Language</dd>
+                        <dt>CSS</dt>
+                        <dd>Cascading Style Sheet</dd>
+                        <dt>JS</dt>
+                        <dd>JavaScript</dd>
+                    </dl>
+                </li>
+            </ul>
+            
+        </div>
+        <div>
+            <img class="beach" src="https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?auto=compress&cs=tinysrgb&w=600" alt="A picture of a beach">
+        </div>
+    </div>
+</body>
+</html>

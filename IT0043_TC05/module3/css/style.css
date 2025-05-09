@@ -1,0 +1,14 @@
+*{
+    background-color: rgb(255, 250, 244);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    height: 100vh;
+    background-image: url("https://img.freepik.com/free-photo/empty-sea-beach-background_74190-313.jpg?semt=ais_hybrid&w=740");
+}
+
+span{
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+}
