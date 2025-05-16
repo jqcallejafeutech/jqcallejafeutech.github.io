@@ -1,0 +1,40 @@
+* {
+    font-family: Arial;
+    color: black;
+    font-size: 16px;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.table {
+    width: 70%;
+    margin: auto;
+}
+
+#table-title{
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    color: rgb(106, 10, 10);
+}
+
+tr:nth-child(even){
+    background-color: darkorange;
+}
