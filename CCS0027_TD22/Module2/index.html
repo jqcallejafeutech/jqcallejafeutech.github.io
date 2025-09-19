@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>My Blog</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#posts">Posts</a>
+        <!-- in-page link -->
+        <a href="#media">See my cars</a>
+        <!-- opens a new page of my website in the same tab -->
+        <a href="aboutme.html">About Me</a>
+        <!-- opens a page of another website in a new tab -->
+         <a href="https://www.facebook.com/me" target="_blank" title="Open my Facebook account to know me more">Visit my social media</a>
+    </nav>
+    <main id="home">
+        <section>
+            <article>
+                <h2>Post Title</h2>
+                <p>Post content goes here...</p>
+            </article>
+        </section>
+        <section id="posts">
+            <p style="font-family: Arial">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias aspernatur <span style="font-style: italic; font-family: 'Times New Roman'">cupiditate doloremque</span>, recusandae autem, eligendi atque molestias obcaecati vel voluptas repellat laboriosam fugit culpa sapiente? Eveniet aliquid qui doloremque amet?</p>
+        </section>
+        <section>
+            <h2>My Favorites</h2>
+            <h3>Bands</h3>
+            <ul>
+                <li>Five Finger Death Punch</li>
+                <li>Skillet</li>
+                <li>Dragon Force</li>
+            </ul>
+            <h3>Cars</h3>
+            <ol>
+                <li>Lamborghini Gallardo</li>
+                <li>Subaru Impreza</li>
+                <li>Nissan Skyline</li>
+            </ol>
+        </section>
+        <section>
+            <h2>My Schedule</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>TIME</th>
+                        <th>MONDAY</th>
+                        <th>TUESDAY</th>
+                        <th>WEDNESDAY</th>
+                        <th>THURSDAY</th>
+                        <th>FRIDAY</th>
+                        <th>SATURDAY</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>7:00 - 9:50</td>
+                        <td>CCS0027 - TD22 (E407)</td>
+                        <td>Vacant</td>
+                        <td>Vacant</td>
+                        <td>Vacant</td>
+                        <td>Vacant</td>
+                        <td>Vacant</td>
+                    </tr>
+                </tbody>
+                <caption>This is my weekly schedule</caption>
+            </table>
+        </section>
+        <section>
+            <h3>Leave your suggestions here</h3>
+            <form action="" method="post">
+                <div>
+                    <label for="email">EMail</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="rating">Rating</label>
+                    <select name="rating" id="rating">
+                        <option value="3">Very Good</option>
+                        <option value="2">OK</option>
+                        <option value="1">Not Good</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <input type="text" name="message" id="message">
+                </div>
+                <div>
+                    <button type="submit" name="submit">Submit Suggestion</button>
+                </div>
+            </form>
+        </section>
+        <section id="media">
+            <div>
+                <img src="mazdarx8.jpg" alt="One of my favorite cars: Mazda RX-8" height="150px">
+            </div>
+            <div>
+                <img src="https://car-images.bauersecure.com/wp-images/10775/1maxdarx-8f34.jpg" alt="Another picture of Mazda RX-8" height="150px">
+            </div>
+            <div>
+                <iframe width="350" src="https://www.youtube.com/embed/suC5A4QETvY?si=vScI-hBHgSfjXwIx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Blog</p>
+    </footer>
+</body>
+
+</html>

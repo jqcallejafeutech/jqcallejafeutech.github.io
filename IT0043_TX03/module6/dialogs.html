@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <button type="button" onclick="getName()">Hello!</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function getName(){
+            var response = prompt("Enter your name"); // changeable
+            let conf = confirm("Continue with your reponse?") // read-only
+            if(conf){
+                alert("Hello, " + response + "!");
+            } else {
+                alert("Name was not submitted!");
+            }
+        }
+        
+    </script>
+</body>
+</html>
