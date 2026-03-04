@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #eee;
+}
+
+#content {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+}
+
+.post {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #eee;
+}

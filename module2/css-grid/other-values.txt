@@ -1,0 +1,5 @@
+        "header header header"
+        "left content content"
+        "right right right"
+        "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);

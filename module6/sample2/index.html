@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery AJAX No Reload Demo</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <h1>jQuery AJAX Demonstration</h1>
+
+    <p>
+        <strong>Page Loaded At:</strong>
+        <span id="loadTime"></span>
+    </p>
+
+    <p>
+        <strong>Live Clock:</strong>
+        <span id="liveClock"></span>
+    </p>
+
+    <hr>
+
+    <h2>Select a User</h2>
+    <button class="userBtn" data-id="1">Load User 1</button>
+    <button class="userBtn" data-id="2">Load User 2</button>
+    <button class="userBtn" data-id="3">Load User 3</button>
+
+    <hr>
+
+    <div id="content">
+        <h3>User information will appear here...</h3>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

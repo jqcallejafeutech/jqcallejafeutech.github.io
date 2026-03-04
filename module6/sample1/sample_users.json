@@ -1,0 +1,34 @@
+[
+  {
+    "user_id": "583c3ac3f38e84297c002546",
+    "email": "admin@test.com",
+    "firstname": "Joseph",
+    "lastname": "Calleja",
+    "nickname": "JC",
+    "verified": true
+  },
+  {
+    "user_id": "583c5484cb79a5fe593425a9",
+    "email": "user@test.com",
+    "firstname": "Hello1",
+    "lastname": "Test1",
+    "nickname": "test1",
+    "verified": true
+  },
+  {
+    "user_id": "583c57672c7686377d2f66c9",
+    "email": "aaa@aaa.com",
+    "firstname": "John",
+    "lastname": "Dough",
+    "nickname": "aaa",
+    "verified": true
+  },
+  {
+    "user_id": "5840b954da0529cd293d76fe",
+    "email": "a@a.com",
+    "firstname": "Jane",
+    "lastname": "Dough",
+    "nickname": "a",
+    "verified": true
+  }
+]
